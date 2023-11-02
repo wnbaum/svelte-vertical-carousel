@@ -42,9 +42,13 @@
 			return 0;
 		}
 	}
+
+	function events(v: number) {
+		return Math.abs(v) > Math.PI/4;
+	}
 </script>
 
-<main class="main" bind:this={self} style="opacity: {opac(scroll)}; height: {height}px; transform: translateY(-50%) perspective(500px) translateZ({-radius}px) rotateX({scroll}rad) translateZ({radius}px) rotateX({adjustAngle(scroll)}rad);	">
+<main class="main" bind:this={self} style="opacity: {opac(scroll)}; height: {height}px; transform: translateY(-50%) perspective(500px) translateZ({-radius}px) rotateX({scroll}rad) translateZ({radius}px) rotateX({adjustAngle(scroll)}rad); {events(scroll) ? "pointer-events: none;" : ""}">
 	<slot></slot>
 </main>
 

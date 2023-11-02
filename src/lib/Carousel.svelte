@@ -32,8 +32,10 @@
 		scrollV += 20*e.deltaY/radius;
 	}
 
+	let interval: number;
+
 	onMount(() => {
-		setInterval(() => {
+		interval = setInterval(() => {
 			let rect: DOMRect = self.getBoundingClientRect();
 			radius = rect.height;
 
@@ -61,6 +63,12 @@
 			scrollV -= 0.05*scrollV;
 		}, 8.333333)
 	});
+	
+	onDestroy(() => {
+		if (interval) {
+			clearInterval(interval);
+		}
+	})
 </script>
 
 <main bind:this={self} class="main" on:wheel={onScroll}>

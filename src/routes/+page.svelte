@@ -24,7 +24,7 @@
 		<CarouselItem height={200}>
 			<div style="width: 100px; height: 300px; border: 1px solid green;"></div>
 		</CarouselItem>
-		<CarouselItem>
+		<CarouselItem height={60}>
 			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
 		</CarouselItem>
 		<CarouselItem>

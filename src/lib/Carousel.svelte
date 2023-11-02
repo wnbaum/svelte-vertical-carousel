@@ -32,6 +32,15 @@
 		scrollV += 20*e.deltaY/radius;
 	}
 
+	let touchPrev: number = 0;
+	function onTouchStart(e: TouchEvent) {
+		touchPrev = e.touches[0].screenY;
+	}
+	function onTouchMove(e: TouchEvent) {
+		scrollV += 40*(touchPrev - e.touches[0].screenY)/radius;
+		touchPrev = e.touches[0].screenY;
+	}
+
 	let interval: number;
 
 	onMount(() => {
@@ -71,7 +80,7 @@
 	})
 </script>
 
-<main bind:this={self} class="main" on:wheel={onScroll}>
+<main bind:this={self} class="main" on:wheel={onScroll} on:touchstart={onTouchStart} on:touchmove={onTouchMove}>
 	<div class="container" style="max-width: {maxWidth};">
 		<slot></slot>
 	</div>

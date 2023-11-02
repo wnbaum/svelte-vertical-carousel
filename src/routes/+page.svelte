@@ -4,7 +4,104 @@
 </script>
 
 <div class="main">
-	<Carousel>
+	<Carousel tiltFix={0} margin={50}>
+		<CarouselItem height={200}>
+			<div style="width: 100px; height: 100px; border: 1px solid green;">
+				Hello
+			</div>
+		</CarouselItem>
+		<CarouselItem height={200}>
+			<div style="width: 100px; height: 400px; border: 1px solid green;">
+				There
+			</div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem height={300}>
+			<div style="width: 100px; height: 400px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem height={200}>
+			<div style="width: 100px; height: 300px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
+		<CarouselItem>
+			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
+		</CarouselItem>
 		<CarouselItem>
 			<div style="width: 100px; height: 100px; border: 1px solid green;"></div>
 		</CarouselItem>
@@ -43,8 +140,8 @@
 
 <style>
 	.main {
-		width: 50vw;
-		height: 80vh;
+		width: 100vw;
+		height: 100vh;
 		position: absolute;
 		transform: translate(-50%,-50%);
 		left: 50%;
